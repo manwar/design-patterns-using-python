@@ -1,7 +1,7 @@
 ## Design Patterns using Python
 ***
 
-Playing with `Design Pattern` using `Python3`. This is my attempt to apply to showcase my recently acquired `Python` skill.
+Playing with `Design Pattern` using `Python3`. This is my attempt to showcase my recently acquired `Python` skill.
 
 - [1. Singleton](https://github.com/manwar/design-patterns-using-python/tree/master/01-singleton.md)
 
