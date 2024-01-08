@@ -1,4 +1,4 @@
-## Design Patterns using Python
+## Design Patterns using Python3
 ***
 
 Playing with `Design Patterns` using `Python3`. This is my attempt to showcase recently acquired `Python` skill.
