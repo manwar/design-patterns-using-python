@@ -17,7 +17,7 @@ class Singleton:
     		__instance = super(Singleton, cls).__new__(cls)
     	return __instance
 
-class SingleObject:
+class SingleObject(Singleton):
     __count == 0
     def counter(self):
     	SingleObject.__count += 1
