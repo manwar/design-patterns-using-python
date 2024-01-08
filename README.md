@@ -1,33 +1,33 @@
 ## Design Patterns using Python
 ***
 
-Playing with `Design Pattern` using `Python3`. This is my attempt to showcase my recently acquired `Python` skill.
+Playing with `Design Patterns` using `Python3`. This is my attempt to showcase my recently acquired `Python` skill.
 
 - [1. Singleton](https://github.com/manwar/design-patterns-using-python/tree/master/01-singleton.md)
 
 ## Outstanding design patterns (to be implemented soon)
 ***
 
-####  1. Factory
-####  2. Abstract Factory
-####  3. Decorator
-####  4. Facade
-####  5. Compsite
-####  6. Builder
-####  7. State
-####  8. Observer
-####  9. Proxy
-#### 10. Template
-#### 11. Filter
-#### 12. Bridge
-#### 13. Iterator
-#### 14. Prototype
-#### 15. Data Access Object
-#### 16. Adapter
+     1. Factory
+     2. Abstract Factory
+     3. Decorator
+     4. Facade
+     5. Compsite
+     6. Builder
+     7. State
+     8. Observer
+     9. Proxy
+    10. Template
+    11. Filter
+    12. Bridge
+    13. Iterator
+    14. Prototype
+    15. Data Access Object
+    16. Adapter
 
-## Commonly used Keywords:
-***
+<br>
 
+## Commonly Used Keywords:
 ### Interface:
 ***
 
