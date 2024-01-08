@@ -3,7 +3,7 @@
 
 Playing with `Design Patterns` using `Python3`. This is my attempt to showcase recently acquired `Python` skill.
 
-1. [Singleton](https://github.com/manwar/design-patterns-using-python/tree/master/01-singleton.md)
+1. [Singleton](https://github.com/manwar/design-patterns-using-python/tree/master/01-singleton/README.md)
 
 ## Outstanding design patterns (to be implemented soon)
 ***
