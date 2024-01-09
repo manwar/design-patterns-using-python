@@ -67,7 +67,7 @@ class ShapeFactory:
 
     def get_shape(self, type):
         if type in self._dispatch:
-            return self._dispatch[type]
+            return self._dispatch[type.upper()]
 ```
 
 **Source**: [test_factory.py](https://github.com/manwar/design-patterns-using-python/blob/master/02-factory/test_factory.py)
