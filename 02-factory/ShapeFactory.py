@@ -11,5 +11,6 @@ class ShapeFactory:
 
     @classmethod
     def get_shape(cls, type):
-        if type in cls._dispatch:
+        if type.upper() in cls._dispatch:
             return cls._dispatch[type.upper()]()
+        raise ValueError

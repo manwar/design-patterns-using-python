@@ -67,8 +67,9 @@ class ShapeFactory:
 
     @classmethod
     def get_shape(cls, type):
-        if type in cls._dispatch:
+        if type.upper() in cls._dispatch:
             return cls._dispatch[type.upper()]()
+        rsises ValueError
 ```
 
 **Source**: [test_factory.py](https://github.com/manwar/design-patterns-using-python/blob/master/02-factory/test_factory.py)
@@ -85,6 +86,13 @@ def test_square_area():
 
 def test_rectangle_area():
     assert approx(ShapeFactory.get_shape("RECTANGLE").area(2, 4)) == 8
+
+def test_mixed_case_shape():
+    assert approx(ShapeFactory.get_shape("SqUaRe").area(3)) == 9
+
+def test_bad_shape():
+    with raises(ValueError):
+        ShapeFactory.get_shape("Bob")
 ```
 
 ## DEMO
@@ -94,3 +102,5 @@ Show time, with the command `pytest -v`
     test_factory.py::test_circle_area PASSED
     test_factory.py::test_square_area PASSED
     test_factory.py::test_rectangle_area PASSED
+    test_factory.py::test_mixed_case_shape PASSED
+    test_factory.py::test_bad_shape PASSED
