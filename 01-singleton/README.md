@@ -7,6 +7,7 @@ directly without need to instantiate the object of the class.
 
 ## IMPLEMENTATION
 
+**Source**: [Singleton.py](https://github.com/manwar/design-patterns-using-python/blob/master/01-singleton/Singleton.py)
 ```python
 class Singleton:
     __instance = None
@@ -14,17 +15,30 @@ class Singleton:
     @classmethod
     def instance(cls):
     	if Singleton.__instance == None:
-    		__instance = super(Singleton, cls).__new__(cls)
+            __instance = super(Singleton, cls).__new__(cls)
     	return __instance
+```
+
+**Source**: [SingleObject.py](https://github.com/manwar/design-patterns-using-python/blob/master/01-singleton/SingleObject.py)
+```python
+from Singleton import Singleton
 
 class SingleObject(Singleton):
-    __count == 0
+    __count = 0
     def counter(self):
     	SingleObject.__count += 1
     	return SingleObject.__count
+```
 
-print(SingleObject.instance().counter())  # prints 1
-print(SingleObject.instance().counter())  # prints 2
-print(SingleObject.instance().counter())  # prints 3
-print(SingleObject.instance().counter())  # prints 4
-print(SingleObject.instance().counter())  # prints 5
+**Source**: [test_singleton.py](https://github.com/manwar/design-patterns-using-python/blob/master/01-singleton/test_singleton.py)
+```python
+import pytest
+from SingleObject import SingleObject
+
+def test_singleton():
+    assert SingleObject.instance().counter() == 1
+    assert SingleObject.instance().counter() == 2
+    assert SingleObject.instance().counter() == 3
+    assert SingleObject.instance().counter() == 4
+    assert SingleObject.instance().counter() == 5
+```
