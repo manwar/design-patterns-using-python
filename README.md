@@ -10,7 +10,7 @@ Playing with `Design Patterns` using `Python3`. This is my attempt to showcase r
 
      1. Decorator
      2. Facade
-     3. Compsite
+     3. Composite
      4. Builder
      5. State
      6. Observer
