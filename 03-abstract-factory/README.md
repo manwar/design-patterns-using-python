@@ -70,7 +70,7 @@ class RoundedRectangle(Shape):
 
 #### Abstract Class
 
-**Source**: [AbstractClass.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/AbstractClass.py)
+**Source**: [AbstractFactory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/AbstractFactory.py)
 ```python
 from abc import ABC, abstractmethod
 
@@ -83,7 +83,7 @@ class AbstractFactory(ABC):
         pass
 ```
 
-#### Concrete Classes implementing interface `Abstractlass`
+#### Concrete Classes implementing interface `AbstractFactory`
 
 **Source**: [ShapeFactory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/Factory.py)
 ```python
