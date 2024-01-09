@@ -85,7 +85,7 @@ class RoundedRectangle(Shape):
 
 #### Concrete Classes implementing interface `AbstractFactory`
 
-**Source**: [ShapeFactory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/Factory.py)
+**Source**: [Factory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/Factory.py)
 ```python
 from Circle import Circle, RoundedCircle
 from Square import Square, RoundedSquare
@@ -121,7 +121,7 @@ class RoundedShapeFactory(AbstractFactory):
 
 #### Factory Producer
 
-**Source**: [ShapeFactory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/Factory.py)
+**Source**: [Factory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/Factory.py)
 ```python
 class FactoryProducer:
 
