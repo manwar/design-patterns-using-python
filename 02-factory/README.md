@@ -60,14 +60,15 @@ from Rectangle import Rectangle
 
 class ShapeFactory:
     _dispatch = {
-        'CIRCLE': Circle(),
-        'SQUARE': Square(),
-        'RECTANGLE': Rectangle()
+        'CIRCLE': Circle,
+        'SQUARE': Square,
+        'RECTANGLE': Rectangle
     }
 
-    def get_shape(self, type):
-        if type in self._dispatch:
-            return self._dispatch[type.upper()]
+    @classmethod
+    def get_shape(cls, type):
+        if type in cls._dispatch:
+            return cls._dispatch[type.upper()]()
 ```
 
 **Source**: [test_factory.py](https://github.com/manwar/design-patterns-using-python/blob/master/02-factory/test_factory.py)
@@ -76,21 +77,14 @@ import pytest
 from pytest import approx
 from ShapeFactory import ShapeFactory
 
-@pytest.fixture()
-def shape_factory():
-    return ShapeFactory()
+def test_circle_area():
+    assert approx(ShapeFactory.get_shape("CIRCLE").area(10)) == 314
 
-def test_circle_area(shape_factory):
-    circle = shape_factory.get_shape("CIRCLE")
-    assert approx(circle.area(10)) == 314
+def test_square_area():
+    assert approx(ShapeFactory.get_shape("SQUARE").area(3)) == 9
 
-def test_square_area(shape_factory):
-    square = shape_factory.get_shape("SQUARE")
-    assert approx(square.area(3)) == 9
-
-def test_rectangle_area(shape_factory):
-    rectangle = shape_factory.get_shape("RECTANGLE")
-    assert approx(rectangle.area(2, 4)) == 8
+def test_rectangle_area():
+    assert approx(ShapeFactory.get_shape("RECTANGLE").area(2, 4)) == 8
 ```
 
 ## DEMO
