@@ -12,6 +12,21 @@ Factory pattern.
 
 ## IMPLEMENTATION
 
+#### Abstract Class
+
+**Source**: [AbstractFactory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/AbstractFactory.py)
+```python
+from abc import ABC, abstractmethod
+
+class AbstractFactory(ABC):
+    def __init__(self):
+        super().__init__()
+
+    @abstractmethod
+    def get_shape(self):
+        pass
+```
+
 #### Interface:
 
 **Source**: [Shape.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/Shape.py)
@@ -66,21 +81,6 @@ class Rectangle(Shape):
 class RoundedRectangle(Shape):
     def name(self):
         return 'Rounded Rectangle'
-```
-
-#### Abstract Class
-
-**Source**: [AbstractFactory.py](https://github.com/manwar/design-patterns-using-python/blob/master/03-abstract-factory/AbstractFactory.py)
-```python
-from abc import ABC, abstractmethod
-
-class AbstractFactory(ABC):
-    def __init__(self):
-        super().__init__()
-
-    @abstractmethod
-    def get_shape(self):
-        pass
 ```
 
 #### Concrete Classes implementing interface `AbstractFactory`
