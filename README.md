@@ -4,24 +4,24 @@ Playing with `Design Patterns` using `Python3`. This is my attempt to showcase r
 
 1. [Singleton](https://github.com/manwar/design-patterns-using-python/tree/master/01-singleton/README.md)
 2. [Factory](https://github.com/manwar/design-patterns-using-python/tree/master/02-factory/README.md)
+2. [Abstract Factory](https://github.com/manwar/design-patterns-using-python/tree/master/03-abstract-factory/README.md)
 
 ## Design Patterns to be implemented soon ...
 
-     1. Abstract Factory
-     2. Decorator
-     3. Facade
-     4. Compsite
-     5. Builder
-     6. State
-     7. Observer
-     8. Proxy
-     9. Template
-    10. Filter
-    11. Bridge
-    12. Iterator
-    13. Prototype
-    14. Data Access Object
-    15. Adapter
+     1. Decorator
+     2. Facade
+     3. Compsite
+     4. Builder
+     5. State
+     6. Observer
+     7. Proxy
+     8. Template
+     9. Filter
+    10. Bridge
+    11. Iterator
+    12. Prototype
+    13. Data Access Object
+    14. Adapter
 
 ## Commonly Used Keywords:
 ### Interface
