@@ -4,11 +4,12 @@ from Rectangle import Rectangle
 
 class ShapeFactory:
     _dispatch = {
-        'CIRCLE': Circle(),
-        'SQUARE': Square(),
-        'RECTANGLE': Rectangle()
+        'CIRCLE': Circle,
+        'SQUARE': Square,
+        'RECTANGLE': Rectangle
     }
 
-    def get_shape(self, type):
-        if type in self._dispatch:
-            return self._dispatch[type.upper()]
+    @classmethod
+    def get_shape(cls, type):
+        if type in cls._dispatch:
+            return cls._dispatch[type.upper()]()
