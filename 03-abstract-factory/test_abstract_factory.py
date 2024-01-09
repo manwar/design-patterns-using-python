@@ -14,3 +14,8 @@ def test_rounded_shape_name():
     shapes = {"CIRCLE":"Rounded Circle","SQUARE":"Rounded Square","RECTANGLE":"Rounded Rectangle"}
     for type in shapes:
         assert rounded_shape_factory.get_shape(type).name() == shapes[type]
+
+def test_bad_shape_name():
+    with raises(ValueError):
+        shape_factory.get_shape("Bob")
+        rounded_shape_factory.get_shape("Bob")
