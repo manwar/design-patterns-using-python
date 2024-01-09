@@ -11,4 +11,4 @@ class ShapeFactory:
 
     def get_shape(self, type):
         if type in self._dispatch:
-            return self._dispatch[type]
+            return self._dispatch[type.upper()]
