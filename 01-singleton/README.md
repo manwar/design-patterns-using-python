@@ -42,3 +42,9 @@ def test_singleton():
     assert SingleObject.instance().counter() == 4
     assert SingleObject.instance().counter() == 5
 ```
+
+## DEMO
+
+Show time, with the command `pytest -v`
+
+    test_singleton.py::test_singleton PASSED
